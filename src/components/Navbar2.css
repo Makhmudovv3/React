@@ -1,0 +1,38 @@
+.Navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.nav_img img {
+    margin-left: 30px;
+    width: 40px;
+    height: 51px;
+}
+
+.Classlist {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Classlist a {
+    margin-top: 9px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #28224B;
+}
+
+
+.Classlist img {
+    width: 55px;
+    height: 55px;
+}
+
+.Classlist span {
+    color: #35B8BE;
+}
