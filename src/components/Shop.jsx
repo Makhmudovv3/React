@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import './Shop.css';
-import Burger from '../assets/burger.png';
-import Burger2 from '../assets/burger2.png';
-import Burger3 from '../assets/burger3.png';
-import Burger4 from '../assets/burger4.png';
-import Burger5 from '../assets/burger5.png';
-import Burger6 from '../assets/burger6.png';
+import burger from '../assets/Burger.png';
+import burger2 from '../assets/Burger2.png';
+import burger3 from '../assets/Burger3.png';
+import burger4 from '../assets/Burger4.png';
+import burger5 from '../assets/Burger5.png';
+import burger6 from '../assets/Burger6.png';
 
 function Menu() {
 
-    const [c1, setC1] = useState(0);
-    const [c2, setC2] = useState(0);
-    const [c3, setC3] = useState(0);
-    const [c4, setC4] = useState(0);
-    const [c5, setC5] = useState(0);
-    const [c6, setC6] = useState(0);
+    let [c1, setC1] = useState(0);
+    let [c3, setC3] = useState(0);
+    let [c2, setC2] = useState(0);
+    let [c4, setC4] = useState(0);
+    let [c5, setC5] = useState(0);
+    let [c6, setC6] = useState(0);
 
-    const p1 = 9.20, p2 = 10.00, p3 = 8.00, p4 = 9.99, p5 = 9.20, p6 = 8.00;
+    let p1 = 9.20, p2 = 10.00, p3 = 8.00, p4 = 9.99, p5 = 9.20, p6 = 8.00;
 
-    const getGrandTotal = () => {
+    function getGrandTotal() {
         return (c1 * p1 + c2 * p2 + c3 * p3 + c4 * p4 + c5 * p5 + c6 * p6).toFixed(2);
     };
 
@@ -37,7 +37,7 @@ function Menu() {
 
             <div className="setka">
                 <div className="karta">
-                    <img src={Burger} className="burger-rasm" alt="b1" />
+                    <img src={burger} className="burger-rasm" alt="b1" />
                     <div className="info-qism">
                         <div className="header-qism"><strong>Burger Dreams</strong> <span className="narx">${p1} USD</span></div>
                         <p className="lorem-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
@@ -51,7 +51,7 @@ function Menu() {
                 </div>
 
                 <div className="karta">
-                    <img src={Burger4} className="burger-rasm" alt="b2" />
+                    <img src={burger4} className="burger-rasm" alt="b2" />
                     <div className="info-qism">
                         <div className="header-qism"><strong>Burger Waldo</strong> <span className="narx">${p2} USD</span></div>
                         <p className="lorem-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
@@ -65,7 +65,7 @@ function Menu() {
                 </div>
 
                 <div className="karta">
-                    <img src={Burger2} className="burger-rasm" alt="b3" />
+                    <img src={burger2} className="burger-rasm" alt="b3" />
                     <div className="info-qism">
                         <div className="header-qism"><strong>Burger Cali</strong> <span className="narx">${p3} USD</span></div>
                         <p className="lorem-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
@@ -79,7 +79,7 @@ function Menu() {
                 </div>
 
                 <div className="karta">
-                    <img src={Burger5} className="burger-rasm" alt="b4" />
+                    <img src={burger5} className="burger-rasm" alt="b4" />
                     <div className="info-qism">
                         <div className="header-qism"><strong>Burger Bacon Buddy</strong> <span className="narx">${p4} USD</span></div>
                         <p className="lorem-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
@@ -93,7 +93,7 @@ function Menu() {
                 </div>
 
                 <div className="karta">
-                    <img src={Burger3} className="burger-rasm" alt="b5" />
+                    <img src={burger3} className="burger-rasm" alt="b5" />
                     <div className="info-qism">
                         <div className="header-qism"><strong>Burger Spicy</strong> <span className="narx">${p5} USD</span></div>
                         <p className="lorem-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
@@ -107,7 +107,7 @@ function Menu() {
                 </div>
 
                 <div className="karta">
-                    <img src={Burger6} className="burger-rasm" alt="b6" />
+                    <img src={burger6} className="burger-rasm" alt="b6" />
                     <div className="info-qism">
                         <div className="header-qism"><strong>Burger Classic</strong> <span className="narx">${p6} USD</span></div>
                         <p className="lorem-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
